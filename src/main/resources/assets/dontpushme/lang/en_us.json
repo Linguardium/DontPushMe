@@ -1,0 +1,8 @@
+{
+  "text.autoconfig.dontpushme.title": "Don't Push Me",
+  "text.autoconfig.dontpushme.option.player_collision": "Collision with Players",
+  "text.autoconfig.dontpushme.option.animal_can_push": "Animals can push Players",
+  "text.autoconfig.dontpushme.option.animal_is_pushed": "Players can push Animals",
+  "text.autoconfig.dontpushme.option.hostile_can_push": "Hostile Mobs can push Players",
+  "text.autoconfig.dontpushme.option.hostile_is_pushed": "Players can push Hostile Mobs"
+}

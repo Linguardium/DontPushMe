@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "dontpushme",
+  "version": "${version}",
+  "name": "Dont Push Me",
+  "description": "Disable Player Collision",
+  "authors": [
+    "Linguardium"
+  ],
+  "contributors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/dontpushme/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "mod.linguardium.dontpushme.DontPushMe"
+    ],
+    "client": [],
+    "server": [],
+    "modmenu": ["mod.linguardium.dontpushme.ModMenuMenu"]
+  },
+  "mixins": [
+    "dontpushme.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.4.0"
+  }
+}
