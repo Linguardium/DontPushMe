@@ -1,12 +1,12 @@
 package mod.linguardium.dontpushme;
 
+import io.github.prospector.modmenu.api.ConfigScreenFactory;
 import io.github.prospector.modmenu.api.ModMenuApi;
 import me.sargunvohra.mcmods.autoconfig1u.AutoConfig;
-import net.minecraft.client.gui.screen.Screen;
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 
-import java.util.Optional;
-import java.util.function.Supplier;
-
+@Environment(EnvType.CLIENT)
 public class ModMenuMenu  implements ModMenuApi {
     @Override
     public String getModId() {
@@ -14,7 +14,8 @@ public class ModMenuMenu  implements ModMenuApi {
     }
 
     @Override
-    public Optional<Supplier<Screen>> getConfigScreen(Screen screen) {
-        return Optional.of(AutoConfig.getConfigScreen(ModConfig.class, screen));
+    public ConfigScreenFactory<?> getModConfigScreenFactory() {
+        return screen -> AutoConfig.getConfigScreen(ModConfig.class, screen).get();
     }
+
 }
